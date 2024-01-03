@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@200&family=Poppins&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+   
+    /* font-family: 'Poppins', sans-serif;  */
+    height: 80vh;
+    
+    background-color: #081b29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+section{
+    margin: auto;
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    background-color: #00cc9b;
+    border-radius: 10px ;
+    padding: 25px;
+    box-shadow: -20px 20px 5px 0px #000000aa
+}
+label{
+    
+    color:#081b29;
+    font-weight: 700;
+    text-shadow: -1px 1px 5px #e3d5d5;
+    font-size: 25px;
+
+}
+.btnok{
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ff3364dd;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.btnok:hover{
+    background-color: #ff3364;
+    transform: scale(1.1);
+    font-size: 22px;
+    font-weight: 500;
+}
+.areanum{
+    border-radius: 10px;
+}
+#title{
+    letter-spacing: 1px;
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-family: Rubik Doodle Shadow, sans-serif;
+    color:#000;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: -1px 1px 5px #e3d5d5;
+    background-color: #00000030;
+}
+
+#num1{
+    width: 100px;
+    height: 70px;
+    font-size: 30px ;
+    text-align: center;
+    
+}
+#num2{
+    width: 100px;
+    height: 70px;
+    font-size: 30px ;
+    text-align: center;
+}
+#area1{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#area2{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#areaop{
+    display: grid;
+    grid-template-columns: repeat(2, auto );
+    gap: 20px 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    
+}
+.btnop {
+    /* width: 160px; */
+    /* height: 60px; */
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ff336420;
+}
+.btnop:hover{
+    background-color: #ff3364;
+    transform: scale(1.1);
+    color: white;
+    
+}
+
+#oper {
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+#areares {
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: #ff3364;
+    background-color: #081b29;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+#res{
+    color: #ff0000;
+}
+
+span{
+    margin-left: 3px;
+}
+#img{
+    height: 90px;
+}
+#imgvoltar{
+    height: 50px;
+}
+#voltar{
+    margin-top: 20px;
+    
+}
+#voltar:hover{
+    transform: scale(1.1);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;}
+
+/*RESPOSIVIDADE*/
+
+@media only screen and (max-width: 450px) {
+    body{
+        margin: 0%;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section{
+        width: 250px;
+        height: auto;
+    }
+    #img{
+        height: 60px;
+        margin: 0px;
+    }
+    #areaop{
+        margin: 0%;
+    }
+    #title{
+        margin: 0%;
+        font-size: 25px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    #area1{
+        height: 200px;
+    }
+    #area2{
+        height: 220px;
+    }
+    #areares{
+        height: auto;
+        font-size: 20px;
+        flex-direction: column;
+    }
+    #num1, #num2{
+        width: 120px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-K-alphabet-icongeek26-linear-colour-icongeek26-2.png" alt="external-K-alphabet-icongeek26-linear-colour-icongeek26-2">
+    <title>Kalculadora Simples</title>
+</head>
+<body onload="reload()" >    
+    <section id="calculadora">
+        <h1 id="title"> CALCULADORA <br> Escolha a operação:</h1>
+
+    <div id="areaop">
+    
+    
+        <button type="button" value="" id="soma" class="btnop"><!--1-->
+            <img src="img/adicionar.png" alt="" id="img">
+        </button>
+        <button type="button" value="SUBTRAÇÃO" id="sub" class="btnop"> <!--2-->
+            <img src="img/subtrair.png" alt="" id="img">
+        </button>
+        <button type="button" value="MULTIPLICAÇÃO" id="mult" class="btnop"><!--3-->
+            <img src="img/multiplicar.png" alt="" id="img">
+        </button>
+        <button type="button" value="DIVISÃO" id="div" class="btnop"><!--4-->
+            <img src="img/dividir.png" alt="" id="img">
+        </button>
+    </div>
+
+    <div id="area1">
+    <label for="num1">DIGITE O NUMERO:</label> 
+    <input type="number" name="num1" id="num1" class="areanum" autofocus>
+     <input type="button" value="Confirmar" id="okn1" class="btnok">
+    </div>   
+    
+    <div id="area2">
+    <label for="num2">DIGITE O PROXIMO NUMERO:</label>
+    <input type="number" name="num2" id="num2" class="areanum">
+     <input type="button" value="Confirmar" id="okn2" class="btnok">
+    </div>
+
+    
+    
+    <div id="areares">
+        <span id="resx">x </span> 
+        <span id="resop"> + </span> 
+         <span id="resy">y </span> 
+          <span id="res">= r</span>
+         
+    </div>
+    <div id="voltar">
+    <a href="index.html"> <img src="img/reload.png" alt="" id="imgvoltar"></a>
+    </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
